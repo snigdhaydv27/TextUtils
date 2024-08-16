@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import './TextForm.css';
 
 export default function TextForm(props) {
   const Uppercase = () =>{
@@ -28,10 +29,12 @@ export default function TextForm(props) {
 <div class="mb-3">
   <textarea class="form-control" value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
 </div>
+<div className='btnCover'>
 <button className='btn btn-primary' onClick={Uppercase}>Convert to UpperCase</button>
 <button className='btn btn-primary mx-3' onClick={Lowercase}>Convert to Lowercase</button>
 <button className='btn btn-primary' onClick={clearText}>Clear Text</button>
 <button className='btn btn-primary mx-3' onClick={removeExtraSpace}>Remove Extra Space</button>
+</div>
 </div>
 <div className="container">
 <h1>Your text Summary</h1>
